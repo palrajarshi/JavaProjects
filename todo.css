@@ -39,7 +39,7 @@ body::before {
   background: #bdbdf8a1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 9vh;
+  /* height: 9vh; */
 }
 #logo-left {
   /* border: 2px solid yellow; */
@@ -54,6 +54,8 @@ body::before {
   /* border: 2px solid red; */
   height: 100%;
   width: 100%;
+  min-width: 4.5rem;
+  min-height: 2.5rem;
   object-fit: cover;
   border-radius: 3rem;
 }
@@ -168,4 +170,79 @@ td {
   border-bottom: 2px solid #000;
   word-wrap: break-word;
   max-width: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 4000px) and (min-width: 1104px) {
+  body {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 1104px) {
+  #nav-mid li:nth-child(1) {
+    width: 7.1rem;
+  }
+  #nav-mid li:nth-child(4) {
+    width: 7rem;
+  }
+  body {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  #nav-mid li {
+    margin-top: 0.3rem;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #logo-left {
+      width: auto;
+      padding-top: 0.3rem;
+  }
+  #buttons-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+  .button-box {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-resp {
+    margin: 0.3rem;
+  }
+  td{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  #nav-mid {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .btn {
+    width: 3rem;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 275px) {
+  #nav-mid {
+    flex-direction: column;
+  }
+  .btn{
+    font-size: 0.5rem;
+    height: 1.7rem;
+  }
+  .tablebox{
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 215px) {
+  .button-box{
+    flex-wrap: wrap;
+  }
 }
