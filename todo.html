@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima&family=Cabin&family=Caprasimo&family=Dosis:wght@200&family=Lato:wght@100&family=Lumanosimo&family=Noto+Serif+Display:wght@300&family=Open+Sans:ital,wght@1,300&family=Pacifico&family=Rubik+Dirt&family=Titillium+Web:wght@300&family=Ysabeau+Infant:wght@300&family=Ysabeau+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo-left">
+        <img src="webdesign-logos/webdesign-logos1.jpeg" alt="" />
+      </div>
+      <div id="nav-mid">
+        <li><a href="#">Our-Projects</a></li>
+        <li><a href="index.html">Clock</a></li>
+        <li><a href="index.html">StopWatch</a></li>
+        <li><a href="#">To-do List</a></li>
+      </div>
+      <div id="buttons-right">
+        <div class="button-box"><button class="btn">Sign in</button></div>
+        <div class="button-box"><button class="btn">Load</button></div>
+      </div>
+    </nav>
+    <!-- <form> -->
+    <div class="heading-box">
+      <h1 class="heading-primary">To-do list</h1>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="titleinp">Title</label>
+      <input
+        class="form-items"
+        id="titleinp"
+        type="text"
+        placeholder="e.g. Today's coffee day"
+      />
+      <label class="form-label" for="txtarea">Description</label>
+      <textarea
+        class="form-items"
+        name="desc"
+        id="txtarea"
+        cols="30"
+        rows="5"
+        placeholder="e.g. The coffee was nice and ..."
+      ></textarea>
+      <div class="button-box">
+        <button id="btn1" class="btn">Add to-do</button>
+        <button id="btn2" class="btn" onclick="listclear()">Clear list</button>
+        <button id="btn3" class="btn" onclick="reloadpage()">Reset</button>
+      </div>
+    </div>
+    <!-- </form> -->
+    <div class="tablebox">
+      <div class="heading-box">
+        <h1 class="heading-primary">Listed Items</h1>
+      </div>
+      <table id="tablemain">
+        <thead>
+          <tr>
+            <th>Sl.no</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+          <!-- Elements will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="mytodo.js"></script>
+</html>

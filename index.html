@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web.design| Java-Projects</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima&family=Cabin&family=Caprasimo&family=Dosis:wght@200&family=Lato:wght@100&family=Lumanosimo&family=Noto+Serif+Display:wght@300&family=Open+Sans:ital,wght@1,300&family=Pacifico&family=Rubik+Dirt&family=Titillium+Web:wght@300&family=Ysabeau+Infant:wght@300&family=Ysabeau+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo-left">
+        <img src="webdesign-logos/webdesign-logos1.jpeg" alt="" />
+      </div>
+      <div id="nav-mid">
+        <li><a href="#">Our-Projects</a></li>
+        <li><a href="#Clock">Clock</a></li>
+        <li><a href="#Stopwatch">StopWatch</a></li>
+        <li><a href="todo.html">To-do List</a></li>
+      </div>
+      <div id="buttons-right">
+        <div class="button-box"><button class="btn">Sign in</button></div>
+        <div class="button-box"><button class="btn">Load</button></div>
+      </div>
+    </nav>
+    <section id="Clock">
+      <div class="heading-box">
+        <h1 class="heading-primary">Clock</h1>
+      </div>
+      <div class="clock-box">
+        <span id="spanbox">
+          <p></p>
+          <div class="button-box">
+            <button id="btn1" class="btn" onclick="switchUTC()"></button>
+          </div>
+        </span>
+      </div>
+    </section>
+    <hr />
+    <section id="Stopwatch">
+      <div class="heading-box">
+        <h1 class="heading-primary">StopWatch</h1>
+      </div>
+      <div class="stopwatch-box" id="watch">
+        <p>00:00:00:000</p>
+        <div class="button-box">
+          <button id="btn2" class="btn" onclick="toggle()">Start</button>
+          <button id="btn3" class="btn" onclick="Reset()">Reset</button>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
