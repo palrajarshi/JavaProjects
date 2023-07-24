@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /* body */
@@ -40,18 +40,16 @@ body::before {
   height: 9vh;
 }
 #logo-left {
-  /* border: 2px solid yellow; */
-  height: 9vh;
-  width: 20%;
-  /* margin: 0.5rem; */
+  height: 100%;
   padding: 0.3rem;
   box-sizing: border-box;
   margin-left: 1rem;
 }
 #logo-left img {
   /* border: 2px solid red; */
+  min-width: 3rem;
   height: 100%;
-  width: 100%;
+  width: 4.5rem;
   object-fit: cover;
   border-radius: 3rem;
 }
@@ -126,7 +124,6 @@ body::before {
   justify-content: center;
   align-items: center;
   width: 70%;
-  display: flex;
   flex-direction: column;
 }
 #spanbox > p {
@@ -159,4 +156,106 @@ body::before {
 .stopwatch-box > p {
   font-size: 4rem;
   font-family: "Titillium Web", sans-serif;
+}
+
+@media (max-width: 1104px) {
+  #nav-mid {
+    text-align: center;
+  }
+  #nav-mid li:nth-child(1) {
+    list-style: none;
+    width: 7.1rem;
+  }
+  #nav-mid li:nth-child(4) {
+    list-style: none;
+    width: 6rem;
+  }
+
+  #nav-mid li a {
+    text-decoration: none;
+    /* border: 2px solid green; */
+    /* margin: 0.3rem; */
+    /* padding: 0.3rem; */
+    font-size: 1.1rem;
+    color: #5030b8;
+    font-family: "Cabin", sans-serif;
+  }
+}
+
+/* Media Queries  */
+
+@media (max-width: 970px) {
+  #spanbox {
+    width: 77%;
+    /* object-fit: contain;*/
+  }
+  #logo-left {
+    margin-left: 2rem;
+  }
+  body {
+    height: 100%;
+  }
+}
+@media (max-width: 882px) {
+  #nav-mid li a {
+    font-size: 1rem;
+  }
+  .btn {
+    height: 2.1rem;
+    width: 3.9rem;
+  }
+  #spanbox {
+    width: 77%;
+  }
+  #spanbox > p {
+    font-size: 2.5rem;
+  }
+  body {
+    height: 100%;
+  }
+}
+@media (max-width: 735px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+  .clock-box {
+    text-align: center;
+    height: 50vh;
+  }
+  body {
+    height: 100%;
+  }
+}
+@media (max-width: 560px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+  #spanbox > p {
+    font-size: 2rem;
+  }
+  .stopwatch-box > p {
+    font-size: 3rem;
+    font-family: "Titillium Web", sans-serif;
+  }
+  .stopwatch-box {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .stopwatch-box > p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 240px) {
+  .stopwatch-box > p {
+    font-size: 1.5rem;
+    overflow: hidden;
+  }
+  .stopwatch-box {
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+  }
 }
