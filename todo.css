@@ -233,6 +233,9 @@ td {
     width: 3rem;
     font-size: 0.7rem;
   }
+  td {
+    font-size: 0.7rem;
+  }
 }
 @media screen and (max-width: 275px) {
   #nav-mid {
