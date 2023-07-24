@@ -199,8 +199,8 @@ td {
     align-items: center;
   }
   #logo-left {
-      width: auto;
-      padding-top: 0.3rem;
+    width: auto;
+    padding-top: 0.3rem;
   }
   #buttons-right {
     display: flex;
@@ -215,8 +215,13 @@ td {
   .btn-resp {
     margin: 0.3rem;
   }
-  td{
+  td {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 474px) {
+  .tablebox {
+    width: 93%;
   }
 }
 @media screen and (max-width: 385px) {
@@ -228,24 +233,21 @@ td {
     width: 3rem;
     font-size: 0.7rem;
   }
-  .tablebox{
-    width: 93%;
-  }
 }
 @media screen and (max-width: 275px) {
   #nav-mid {
     flex-direction: column;
   }
-  .btn{
+  .btn {
     font-size: 0.5rem;
     height: 1.7rem;
   }
-  .tablebox{
+  .tablebox {
     overflow: hidden;
   }
 }
 @media screen and (max-width: 215px) {
-  .button-box{
+  .button-box {
     flex-wrap: wrap;
   }
 }
