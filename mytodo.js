@@ -27,8 +27,18 @@ function updatetable() {
   storage = JSON.parse(localStorage.getItem("value")) || [];
   let fetch = document.getElementById("tablebody");
   let index = 0;
+
   let serialnumber = 1;
   let str = "";
+  if (storage.length == 0) {
+    str = `<tr>
+      <td>1</td>
+      <td>Add your title here</td>
+      <td>Add description</td>
+      <td>None</td>
+    </tr>`;
+    tablebody.innerHTML = str;
+  }
   for (index = 0; index < storage.length; index = index + 2) {
     console.log("inside for");
     str += `<tr>
@@ -43,8 +53,6 @@ function updatetable() {
 }
 
 fetch.addEventListener("click", storageupd);
-
-// window.onload = updatetable();
 
 // onclick function to reload the page
 function reloadpage() {
