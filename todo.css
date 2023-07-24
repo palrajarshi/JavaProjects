@@ -228,6 +228,9 @@ td {
     width: 3rem;
     font-size: 0.7rem;
   }
+  .tablebox{
+    width: 93%;
+  }
 }
 @media screen and (max-width: 275px) {
   #nav-mid {
